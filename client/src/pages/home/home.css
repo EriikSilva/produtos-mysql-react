@@ -1,0 +1,15 @@
+.principal{
+    
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin: 10rem auto;
+    width: 50%;
+    align-items: center;
+    padding: 2rem;
+}
+
+.principal button{
+    margin: 1rem;
+   
+}
