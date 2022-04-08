@@ -2,7 +2,7 @@
 
 ## Produtos e compras com mysql e nodeJS
 
-## PASSOS IMPORTANTES PARA O FUNCIONAMENTO DO BACKEND COM MYSQL
+## PASSOS IMPORTANTES PARA O FUNCIONAMENTO DO BACKEND COM MYSQL WORKBENCH
 ### Lembre-se que para abrir um servidor local é necessario ter baixado o `wamp` ou o `xampp`
 ### Crie um banco de dados chamado `icts`(é necessario ter esse nome para que funcione o backend). Selecione em criar uma nova table com o nome `produto` e copie como na imagem abaixo
 ![image](https://user-images.githubusercontent.com/61124602/162334687-0648c0d1-8c77-4b80-9507-7efa706a4b41.png)
