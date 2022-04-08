@@ -35,7 +35,6 @@ const Compras = () => {
       })
     }
 
-
     return (
     <div className="main">          
         <div className='botoes'>
@@ -52,8 +51,7 @@ const Compras = () => {
                   <th>Descrição</th>
                   <th>Preço</th>
                   <th>Compra</th>
-                  <th>Data da Criação</th>  
-
+                  <th>Data da Criação</th> 
                 </tr>
               </thead>
               
@@ -101,7 +99,6 @@ const Compras = () => {
           </div>
         })
       }
-
     </div>
     );
 };

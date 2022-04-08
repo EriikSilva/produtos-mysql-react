@@ -14,20 +14,7 @@ const Produtos = () =>{
     const [novaDescricao, setNovaDescricao] = useState('')
     const [novoPreco, setNovoPreco] = useState(0)
 
-
     const [listaProdutos, setListaProdutos] = useState([]);
-
-    // const [data, setData] = useState('');
-
-    // const getData = () => {
-    //     Axios.get('http://localhost:3030/getHora', {
-    //         data: data
-    //     }).then((res) => {
-    //         setListaProdutos(res.data);
-    //     })
-      
-    // }
-
 
     const adicionarProduto = () => {
         Axios.post('http://localhost:3030/create', {
@@ -46,8 +33,6 @@ const Produtos = () =>{
             alert("adicionado")
         });
     };
-
-    
 
     const updateProdutoNome = (id) => {
         Axios.put('http://localhost:3030/updateProdutosNome',
@@ -156,9 +141,9 @@ const Produtos = () =>{
                 
 
                
-                {
-                  listaProdutos.map((produto, key) => {
-                        return <div className="list-produtos" key={produto.id}>
+            {
+                listaProdutos.map((produto, key) => {
+                    return <div className="list-produtos" key={produto.id}>
                         
                         <table>
                           <thead>

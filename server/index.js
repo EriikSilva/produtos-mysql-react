@@ -6,7 +6,6 @@ const cors = require('cors');
 app.use(cors());
 app.use(express.json());
 
-
 const db = mysql.createConnection({
     user: 'root',
     host: 'localhost',
@@ -19,8 +18,6 @@ app.post('/create', (req, res) => {
     const nome = req.body.nome;
     const descricao = req.body.descricao;
     const preco = req.body.preco;
-
-
 
     db.query('INSERT INTO produto (nome, descricao, preco) VALUES (?,?,?)',
      [nome, descricao, preco],
@@ -67,7 +64,6 @@ app.put("/updateProdutosNome", (req, res) => {
     });
 });
 
-
 app.put("/updateProdutosDescricao", (req, res) => {
     const id = req.body.id
     const descricao = req.body.descricao
@@ -104,23 +100,5 @@ app.delete("/delete/:id", (req, res)=>{
         }
     });
 });
-
-
-
-
-// app.get("/getHora", (req, res) =>  {
-    
-//     const data = req.body.data;
-
-//     db.query("SELECT data_criacao = ? FROM produto",[data], (err, res) =>{
-//         if(err){
-//             console.log(err);
-//         }else{
-//             res.send("funcionout");
-//         }
-//     });
-// });
-
-
 
 app.listen(3030, () => {console.log("runing in 3030")});
